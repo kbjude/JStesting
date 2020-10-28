@@ -7,3 +7,7 @@ it('Checks for the input if a string', () => {
 it('Checks for an empty input', () => {
   expect(reverse('')).toBe('The value can not be empty');
 });
+
+it('Returns the string passed reversed', () => {
+  expect(reverse('jude')).toBe('eduj');
+});
