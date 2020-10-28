@@ -4,5 +4,4 @@
 //       } if (text.length === 0) {
 //         return 'The value can not be empty';
 //       }
-    
 // }
