@@ -7,3 +7,7 @@ it('Checks for the input if a string', () => {
 it('Checks for an empty input', () => {
     expect(capitalize('')).toBe('The value can not be empty');
 })
+
+it('Return the first letter of the string capitalized',() => {
+    expect(capitalize('jude')).toBe('Jude');
+})
