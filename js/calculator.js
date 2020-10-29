@@ -1,5 +1,5 @@
-const calculator = (a, b) => {
-    let message = null;
+const add = (a, b) => {
+  let message = null;
   if (typeof a === 'string' || typeof b === 'string') {
     message = 'Input has to be an integer';
   } if (typeof a === 'number' && typeof b === 'number') {
@@ -8,4 +8,15 @@ const calculator = (a, b) => {
   return message;
 };
 
-export default calculator;
+const multiplication = (a, b) => {
+  let message = null;
+  if (typeof a === 'number' && typeof b === 'number') {
+    message = a * b;
+  } else {
+    message = 'Input has to be an integer';
+  }
+  return message;
+};
+
+const calc = { add, multiplication };
+export default calc;
