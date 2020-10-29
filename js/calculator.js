@@ -24,5 +24,13 @@ const subtract = (a, b) => {
   return message;
 };
 
-const calc = { add, multiplication, subtract };
+const divide = (a, b) => {
+  let message = null;
+  if (typeof a === 'number' && typeof b === 'number') {
+    message = a / b;
+  }
+  return message;
+};
+
+const calc = { add, multiplication, subtract, divide };
 export default calc;
