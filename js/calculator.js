@@ -12,11 +12,17 @@ const multiplication = (a, b) => {
   let message = null;
   if (typeof a === 'number' && typeof b === 'number') {
     message = a * b;
-  } else {
-    message = 'Input has to be an integer';
   }
   return message;
 };
 
-const calc = { add, multiplication };
+const subtract = (a, b) => {
+  let message = null;
+  if (typeof a === 'number' && typeof b === 'number') {
+    message = a - b;
+  }
+  return message;
+};
+
+const calc = { add, multiplication, subtract };
 export default calc;
