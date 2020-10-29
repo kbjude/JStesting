@@ -1,7 +1,5 @@
-// const calculator = () => {
-//     if (typeof text !== 'string') {
-//         return 'The input has to be string';
-//       } if (text.length === 0) {
-//         return 'The value can not be empty';
-//       }
-// }
+import calculator from '../js/calculator';
+
+it('Checks for the input if a string', () => {
+  expect(calculator('the', 3)).toBe('Input has to be an integer');
+});
