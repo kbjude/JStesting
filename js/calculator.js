@@ -1,9 +1,11 @@
-const calculator = ((a, b) => {
-  if (typeof a || b !== 'integer') {
-    return 'Input has to be an integer';
-  } if (a && b === 'integer') {
-    return a + b
+const calculator = (a, b) => {
+    let message = null;
+  if (typeof a === 'string' || typeof b === 'string') {
+    message = 'Input has to be an integer';
+  } if (typeof a === 'number' && typeof b === 'number') {
+    message = a + b;
   }
-});
+  return message;
+};
 
 export default calculator;
