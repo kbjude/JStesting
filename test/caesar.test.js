@@ -1,17 +1,17 @@
 import caesar from '../js/caesar';
 
-test('correctly cipher text', () => {
+test('Correctly cipher text', () => {
   expect(caesar.caesarCypher('hello', 2)).toBe('jgnnq');
 });
 
-test('Only letters can be included', () => {
-  expect(caesar.caesarCypher(3, 1)).toBe('The input has to be string');
+test('Wrapping a to z', () => {
+  expect(caesar.caesarCypher(3, 1)).toBe('The input is not a character between a-z');
 });
 
-test('Uppercase letters also works', () => {
-  expect(caesar.caesarCypher('HELLO', 2)).toBe('jgnnq');
+test('Keeping the same case', () => {
+  expect(caesar.caesarCypher('HeLLo', 2)).toBe('JgNNq');
 });
 
-test('Punctuation and special characters are not converted', () => {
-  expect(caesar.caesarCypher('h.ello', 2)).toBe('j.gnnq');
+test('Caesar cipher with punctuation and special characters', () => {
+  expect(caesar.caesarCypher('hello, World!!', 2)).toBe('jgnnq, Yqtnf!!');
 });

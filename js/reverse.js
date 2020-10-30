@@ -1,4 +1,4 @@
-const reverse = (text) => {
+const reverseString = (text) => {
   if (typeof text !== 'string') {
     return 'The input has to be string';
   } if (text.length === 0) {
@@ -11,4 +11,4 @@ const reverse = (text) => {
   return textReversed.join('').toString();
 };
 
-export default reverse;
+export default reverseString;
