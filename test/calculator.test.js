@@ -9,7 +9,7 @@ it('Checks when only one input is captured', () => {
   expect(calc.add('')).toBe('Input has to be an integer');
 });
 
-it('Checks when right values are stored', () => {
+it('Adds when right values are stored', () => {
   expect(calc.add(3, 3)).toBe(6);
 });
 

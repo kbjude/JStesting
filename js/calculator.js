@@ -32,5 +32,7 @@ const divide = (a, b) => {
   return message;
 };
 
-const calc = { add, multiplication, subtract, divide };
+const calc = {
+  add, multiplication, subtract, divide,
+};
 export default calc;
